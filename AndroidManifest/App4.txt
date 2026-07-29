@@ -1,0 +1,99 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="preferExternal" package="com.budgestudios.googleplay.PawPatrolRescueWorld" platformBuildVersionCode="35" platformBuildVersionName="15">
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:maxSdkVersion="29" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-feature android:glEsVersion="0x00030000"/>
+<uses-feature android:name="android.hardware.vulkan.version" android:required="false"/>
+<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+<uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+<uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+<uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<queries>
+<package android:name="com.budgestudios.authenticator"/>
+<package android:name="com.budgestudios.BarbieMagicalFashion"/>
+<package android:name="com.budgestudios.googleplay.BabyColoringBook"/>
+<package android:name="com.budgestudios.googleplay.BarbieDreamhouse"/>
+<package android:name="com.budgestudios.googleplay.BlueyBLU"/>
+<package android:name="com.budgestudios.googleplay.BudgeRacing"/>
+<package android:name="com.budgestudios.googleplay.BudgeWorld"/>
+<package android:name="com.budgestudios.googleplay.DCSuperHeroGirls"/>
+<package android:name="com.budgestudios.googleplay.Everrun"/>
+<package android:name="com.budgestudios.googleplay.FrozenFRZ"/>
+<package android:name="com.budgestudios.googleplay.HotWheelsUnlimited"/>
+<package android:name="com.budgestudios.googleplay.MiraculousMIR"/>
+<package android:name="com.budgestudios.googleplay.MonsterHighMOA"/>
+<package android:name="com.budgestudios.googleplay.MyLittlePonyColoring"/>
+<package android:name="com.budgestudios.googleplay.MyLittlePonyMLG"/>
+<package android:name="com.budgestudios.googleplay.MyLittlePonyRainbowRunners"/>
+<package android:name="com.budgestudios.googleplay.PawPatrolRescueWorld"/>
+<package android:name="com.budgestudios.googleplay.ThomasAndFriendsMagicalTracks"/>
+<package android:name="com.budgestudios.googleplay.ThomasAndFriendsMinis"/>
+<package android:name="com.budgestudios.googleplay.TransformersDisasterDash"/>
+<package android:name="com.budgestudios.HelloKittyLunchBox"/>
+<package android:name="com.budgestudios.HelloKittyNailSalon"/>
+<package android:name="com.budgestudios.MyLittlePonyHarmonyQuest"/>
+<package android:name="com.budgestudios.StrawberryShortcakeBakeShare"/>
+<package android:name="com.budgestudios.ThomasAndFriendsGoGoThomas"/>
+<package android:name="com.budgestudios.TransformersRescueBotsHeroAdventures"/>
+<intent>
+<action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+</intent>
+<intent>
+<action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+</intent>
+</queries>
+<uses-permission android:name="com.android.vending.BILLING"/>
+<permission android:name="com.budgestudios.googleplay.PawPatrolRescueWorld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+<uses-permission android:name="com.budgestudios.googleplay.PawPatrolRescueWorld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+<application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.budge.platforms.android.google.backup.BudgeGoogleBackupAgentHelper" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:roundIcon="@mipmap/app_icon_round" android:supportsRtl="true">
+<meta-data android:name="unity.splash-mode" android:value="1"/>
+<meta-data android:name="unity.splash-enable" android:value="true"/>
+<meta-data android:name="unity.launch-fullscreen" android:value="true"/>
+<meta-data android:name="android.max_aspect" android:value="1.86"/>
+<meta-data android:name="unity.render-outside-safearea" android:value="true"/>
+<meta-data android:name="notch.config" android:value="portrait|landscape"/>
+<meta-data android:name="unity.auto-report-fully-drawn" android:value="true"/>
+<activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:maxAspectRatio="1.86" android:name="com.budgestudios.googleplay.PawPatrolRescueWorld.CustomUnityPlayerActivity" android:resizeableActivity="false" android:screenOrientation="userLandscape">
+<meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+<meta-data android:name="notch_support" android:value="true"/>
+<meta-data android:name="android.app.lib_name" android:value="unity"/>
+<meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"/>
+</activity>
+<provider android:authorities="com.budgestudios.googleplay.PawPatrolRescueWorld.BudgeFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/budge_file_provider_paths"/>
+</provider>
+<service android:name="com.unity3d.plugin.downloader.UnityDownloaderService"/>
+<receiver android:name="com.unity3d.plugin.downloader.UnityAlarmReceiver"/>
+<meta-data android:name="com.google.android.backup.api_key" android:value="unused"/>
+<activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.unity3d.plugin.downloader.UnityDownloaderActivity">
+<intent-filter>
+<category android:name="android.intent.category.LAUNCHER"/>
+<action android:name="android.intent.action.MAIN"/>
+</intent-filter>
+</activity>
+<activity android:name="com.budge.deeplinks.BudgeUnityInterface"/>
+<activity android:name="com.budge.downloads.AssetDownloader"/>
+<activity android:name="com.budge.email.EmailSharingManager"/>
+<activity android:name="com.budge.hardware.AndroidPhotoLibrary"/>
+<meta-data android:name="AUTHORITIES" android:value="com.budgestudios.googleplay.PawPatrolRescueWorld"/>
+<meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true"/>
+<meta-data android:name="com.google.android.play.billingclient.version" android:value="7.1.1"/>
+<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+<service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+<meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+</service>
+<service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+<receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+<activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+<meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+</application>
+</manifest>

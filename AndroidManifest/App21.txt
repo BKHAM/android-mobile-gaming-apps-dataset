@@ -1,0 +1,520 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__density" android:splitTypes="" package="com.kids.preschool.learning.games" platformBuildVersionCode="34" platformBuildVersionName="14">
+<supports-screens android:largeScreens="true" android:xlargeScreens="true"/>
+<uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+<uses-feature android:name="android.hardware.camera" android:required="false"/>
+<uses-permission android:maxSdkVersion="32" android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+<uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="com.android.vending.BILLING"/>
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_TYPE_SYSTEM_EXEMPTED"/>
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+<uses-permission android:name="android.permission.VIBRATE"/>
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+<uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+<dist:module dist:instant="true"/>
+<queries>
+<intent>
+<action android:name="android.media.action.IMAGE_CAPTURE"/>
+</intent>
+<intent>
+<action android:name="androidx.browser.customtabs.CustomTabsService"/>
+</intent>
+<intent>
+<action android:name="android.intent.action.VIEW"/>
+<category android:name="android.intent.category.BROWSABLE"/>
+<data android:scheme="https"/>
+</intent>
+<intent>
+<action android:name="android.intent.action.VIEW"/>
+<category android:name="android.intent.category.BROWSABLE"/>
+<data android:scheme="http"/>
+</intent>
+<intent>
+<action android:name="android.intent.action.VIEW"/>
+<data android:scheme="market"/>
+</intent>
+<intent>
+<action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+</intent>
+<intent>
+<action android:name="android.support.customtabs.action.CustomTabsService"/>
+</intent>
+</queries>
+<queries>
+<intent>
+<action android:name="android.media.action.IMAGE_CAPTURE"/>
+</intent>
+</queries>
+<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+<uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+<uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+<uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+<permission android:name="com.kids.preschool.learning.games.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+<uses-permission android:name="com.kids.preschool.learning.games.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+<application android:allowBackup="false" android:appCategory="game" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="orientation|screenSize" android:extractNativeLibs="false" android:fullBackupContent="@xml/billing_backup_rules" android:fullBackupOnly="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.kids.preschool.learning.games.MyApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+<activity android:exported="false" android:name="com.kids.preschool.learning.games.HomeActivity" android:screenOrientation="landscape"/>
+<activity android:exported="false" android:name="com.kids.preschool.learning.games.MoreAppActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.MakePairActivity2" android:screenOrientation="landscape"/>
+<activity android:exported="true" android:name="com.kids.preschool.learning.games.animals.AnimalPracticeFreedom" android:screenOrientation="landscape"/>
+<activity android:exported="false" android:name="com.kids.preschool.learning.games.StickersGames"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.InAppBilling.SubscriptionAllPackActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.colorpinata.ColorPinataActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.coding_game.CodingGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.environment.hmaquarium.AquariumHalfMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.games.fishing.FishingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.puzzles.floatinggame.FloatingGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.monkeychew.MonkeyChewActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.colors.learncolor.LearnColorSCardActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.numbers.seqNumberSubmarine.SequenceNumberActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.puzzles.sortingcolorobject.SortingColorObjectActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.music.musicalCollection.MusicalCollectionActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.android.pipepuzzle.level.MysticMathLevelActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.pipepuzzle.PipePuzzleGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.fruitscatching.FruitsCatchingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.shapes.eggpattern.EggPatternMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.environment.GarbageSorting.GarbageSortingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.numbers.Sorting.NumberSortingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.shapes.matchch.MatchingDesignationActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.balloon_maker.BalloonMakerActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.shapes.shapetracing.ShapeTracingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.puzzles.puzzleOrientation.PuzzleOrientationActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.alphabets.hotairballoon.HotAirBalloonsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.puzzles.spaceswipe.SpaceSwipeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.slot_machine.MachineGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.foods.juicemaker.JuiceMakerActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.alphabets.digging.DiggingGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.alphabets.factorygame.FactoryGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.colors.colorfunballon.ColorFunIceBalloonActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.slot_machine.JackpotSlotMachineActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.kids.preschool.learning.games.games.spaceshooter.SpaceShooterActivity"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.spelling.RainbowSpell.RainbowSpellActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.numbers.duckies5.DuckiesLittle5Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.cake_making.CakeMakingLevelActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.numbers.littlemonkeys5.MonkeysLittle5" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.numbers.duckies10.DuckiesLittle10Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.calendar.monthsong.MonthSongsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.kids.preschool.learning.games.puzzles.cntObjt.CntObjActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.cntObjt.CntObjLevelActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.cake_making.PizzaDesignActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.cake_making.CakeMakingEasyActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.cake_making.CakeMakingHardActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.spelling_match.SpellMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.worksheet.NumWorksheetActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.brushteeth.BrushTeethActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.CorrectIncorrectSpelling.CorrectIncorrectSpellingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.FootballMath.FootballMathActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.alphaCollection.AlphabetCollectionActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.MapMatching.MapMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.parallaxmath.ParallaxMathActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.OddOneOut.OddOneOutGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.OddOneOut.Od_LevelActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.sorting.AlphabetSortingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.rubicsCube.RubicsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.whatsEnding.WhatsEndingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.turkeyRun.TurkeyRunActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.monkeyGame.MonkeyTrashActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.rewardgames.RewardGamesActivity" android:theme="@style/Transparent"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.Vege_fruitSort.VF_SortingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.CapitalNSmallLetter.SpellingCapitalLetterActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.ConnectTheDots.MathCountTheDotsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.firstletter.AlphabetFirstLetterActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.calendar.christmas_design.CT_SceneDesignerActivity" android:parentActivityName="com.kids.preschool.learning.games.MainActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.objectcollect.ObjectCollectionActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathWakaMole.MathWakaMoleEasyActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.CurrencyLearn.PiggyBankCurrencyActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.calendar.christmas_design.CT_SDGallery" android:parentActivityName="com.kids.preschool.learning.games.MainActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.PuzSeqMatch.SequenceMatchPuzActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.DragDropNum.DragDropNumActivity" android:screenOrientation="landscape"/>
+<activity android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.CommunityShadowMatch.CommunityShadowMatch" android:screenOrientation="landscape"/>
+<activity android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.icecream.IceCream" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathIceCreamMatch.MathIceCreamMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.shopping.ElephantShoppingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.shopping.ShoppingCartActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.Bubble.BubbleAlphabetActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.jumbledspelling.JumbledSpellActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathTrain.TrainActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.swapspelling.SwapSpellActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.matchspelling.MatchCorrectSpellingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.rightspelling.ChooseRightSpellActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.missingletter.MissingLetterSpellingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathLab.LabAdditionActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathLab.LabSubActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathPiggyBank.PiggyBankActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathSubmarine.SubmarineActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.cursivetracing.CursiveTracingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.colorbynumber.CBNGallery" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.colorbynumber.ColorByNumberActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.Math_QSet.Math_QSetSubActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.Math_QSet.Math_QSetAddActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.duck_shoot_single_dual.SingleDuckActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.duck_shoot_single_dual.DualDuckActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.halfcoloring.HalfColoringActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.halfcoloring.HCAGallery" android:screenOrientation="landscape" android:theme="@style/Transparent"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.GridShapeColor.GridShapeColorActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.memorygame.MemoryGame" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.craft.CraftStepActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.craft.CraftsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.math.MathGamesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.trafficsignal.CarTrafficActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.worksheets.WorkSheetDrawActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.wordsearch.WordSearchEasy" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.wordsearch.WordSearchHard" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.spelling.WordGamesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.worksheets.WorkSheetsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.antracinggame.AntRacingGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.beecounting.BeeCountingGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.CupCakeGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.duel_fish.DuelFishingGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.EggCrackGame" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.music.DrumsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.AlphabetEggGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.duel_fireworks.FireWorksDualActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.scene_design.SDGallery" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.WhichDoesNotBelongsShelvesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.Brick_Wall_1020" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.CannonBall_10s" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.DiamonRewardActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.hide_n_seek.HideandSeekActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.DuelGamesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.sequence.CompleteSequenceActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.shadow.MonsterShadowActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.shadow.ShadowGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.sinkandfloat.SinkAndFloatActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.preschool_store.StoreActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShipBuildingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.WhichDoesNotBelongActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ObjectColorMatchingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.HalfPatternMatchingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.GreaterThanLessThanActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.wackamole.WakaMoleSingleActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.wackamole.WakaMoleMultiActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.balance_balloon.BalanceBalloonActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.arrowNballoon.ArrowBalloonActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.rocket_launch.RocketLaunchingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.maze.MazeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.maze.MazeGalleryActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.scene_design.SceneDesignGalleryActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.scene_design.SceneDesignerActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.ant_smasher.AntSmasherSingleActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.GamesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.games.ant_smasher.AntSmasherDualActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.ListNumberTracing2Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.storybook.StoryActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.storybook.StoryBookActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.tracing.TracingDraw2Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.tracing.ListAlphabetTracing2Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.music.Piano2Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.music.MusicalPinataActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumBalancingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.ArrangeCalculatorActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.animalpieces.AnimalPiecesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.FishTrashGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.RoomCleaningActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.stickerbook.StickerBookActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.RopeWayActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.MagicHatActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.PanCakeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumBingoActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.carwash.CarWashActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.WindowPuzzleActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.VehiclePiececPuzzle.VehiclesPiecePuzzleActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.IceCreamShop.IceCreamShopActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.connectdots.ConnectDotsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeRobotActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeCarActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeFishActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeChickenActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeCrocodileActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.phonic2.AlphabetPhonic2Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.AnimalMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.PickAnimalActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.FarmvsjungleActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.FoodsShoppingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColorFrogActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.FindmeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.workout.YogaActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.workout.GridYogaActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.WhichOnNumActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.AlphabetGridPuzzle" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.RatvsRatActivity" android:screenOrientation="landscape" android:theme="@style/DisableMultiTouch"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.LostObjectPeekaboo" android:screenOrientation="landscape" android:theme="@style/DisableMultiTouch"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.DuckGoActivity" android:screenOrientation="landscape" android:theme="@style/DisableMultiTouch"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.SortingGamePuzzle" android:screenOrientation="landscape" android:theme="@style/DisableMultiTouch"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.coloringbook.ItemViewerActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.coloringbook.GalleryActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.MunchingMonsterActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.KidSudokuActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.CommunityHelperActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.WhichOneActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.jigsaw_puzzle.JigsawImagesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.jigsaw_puzzle.JigsawPuzzleActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.SeaAnimalColorActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.VehicleGarageActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.music.FluteActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.ABCSequenceLionCageActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumFishingActivity" android:screenOrientation="landscape" android:theme="@style/DisableMultiTouch"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.MySantaActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.PixelPuzzleActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColorTreatActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColMagicHatActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.MakePairActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeRocketActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.AlphabetLineMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.OddOneOutActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.FarmGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.ListNumberTracingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.tracing.TracingDrawActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.tracing.ListAlphabetsTracingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.InAppBilling.SubscriptionActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.FruitTruckActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.find_difference.PlayDifferenceActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.find_difference.DiffImagesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.MemoryMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.PuzzlesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumEquationActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.AlphabetsWordBuilder" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.pixelart.PixelDarwingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.pixelart.PixelArtActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.videos.VideoPlayerActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.videos.VideoActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.VehicleQuizActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.VehiclesGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.VehiclesFlashCardActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.vehicles.VehiclesActivity" android:screenOrientation="landscape"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.NewApp" android:theme="@style/Transparent"/>
+<activity android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.settings.SettingsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.coloringbook.DrawActivityColoringBook" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.coloringbook.GridActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.MainActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.AlphabetsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumbersActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColorsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapesActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.AnimalsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.FruitsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.calendar.CalendarActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.EnvironmentsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.UpperCaseActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.LowerCaseActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.AlphabetsPracticeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.alphabets.PhonicsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumNumbersActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumCountingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumPracticeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.numbers.NumQuizActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColLearnActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColFlashCardsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColQuizActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.colors.ColPracticeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeLearnActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapePracticeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeWordsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.shapes.ShapeQuizActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.AnimalFlashCardsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.AnimalPracticeActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.puzzles.opositematch.AntoMatchActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.animals.AnimalPlayActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.FruitsFlashCardsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.FruitsQuizActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.foods.FruitPlayActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.calendar.CalendarMonthsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.calendar.CalendarGameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.calendar.CalendarDaysActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.environment.BodyParts1Activity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.music.MusicActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.music.PianoActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.games.music.XylophoneActivity" android:screenOrientation="landscape"/>
+<activity android:name="com.kids.preschool.learning.games.FrontClass"/>
+<activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.kids.preschool.learning.games.SplashScreenActivity" android:screenOrientation="landscape">
+<intent-filter>
+<action android:name="android.intent.action.MAIN"/>
+<action android:name="android.intent.action.VIEW"/>
+<category android:name="android.intent.category.LAUNCHER"/>
+</intent-filter>
+</activity>
+<meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification"/>
+<meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/red"/>
+<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-6006920678118086~8376907858"/>
+<provider android:authorities="com.kids.preschool.learning.games.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_path"/>
+</provider>
+<service android:exported="true" android:name="com.kids.preschool.learning.games.service.MyFirebaseMessagingService">
+<intent-filter>
+<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+</intent-filter>
+</service>
+<uses-library android:name="org.apache.http.legacy" android:required="false"/>
+<meta-data android:name="com.appvestor.android.apid" android:value="b0-d3bebe82-1ee6-4ede-a1c3-c7c4f57c1407"/>
+<meta-data android:name="com.appvestor.android.acid" android:value="a1-268322ac-4c1a-429d-b7d0-ef15bc31ce38"/>
+<activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+<activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.inmobi.ads.rendering.InMobiAdActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+<meta-data android:name="com.google.android.play.billingclient.version" android:value="7.0.0"/>
+<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+<intent-filter>
+<action android:name="android.intent.action.VIEW"/>
+<category android:name="android.intent.category.DEFAULT"/>
+<category android:name="android.intent.category.BROWSABLE"/>
+<data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+</intent-filter>
+</activity>
+<activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+<intent-filter>
+<action android:name="android.intent.action.VIEW"/>
+<category android:name="android.intent.category.DEFAULT"/>
+<category android:name="android.intent.category.BROWSABLE"/>
+<data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+</intent-filter>
+</activity>
+<service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+<meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+<meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+<meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+<meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+<meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+<meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+<meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+</service>
+<receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+<intent-filter>
+<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+</intent-filter>
+</receiver>
+<service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+<intent-filter android:priority="-500">
+<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+</intent-filter>
+</service>
+<activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<provider android:authorities="com.kids.preschool.learning.games.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+<receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+<service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+<service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+<provider android:authorities="com.kids.preschool.learning.games.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+<service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+<activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+<activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+<provider android:authorities="com.kids.preschool.learning.games.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+<meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+<meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+<meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+<meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+</provider>
+<service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+<service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+<service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+<receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+<intent-filter>
+<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+</intent-filter>
+</receiver>
+<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+<intent-filter>
+<action android:name="android.intent.action.BATTERY_OKAY"/>
+<action android:name="android.intent.action.BATTERY_LOW"/>
+</intent-filter>
+</receiver>
+<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+<intent-filter>
+<action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+<action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+</intent-filter>
+</receiver>
+<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+<intent-filter>
+<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+</intent-filter>
+</receiver>
+<receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+<intent-filter>
+<action android:name="android.intent.action.BOOT_COMPLETED"/>
+<action android:name="android.intent.action.TIME_SET"/>
+<action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+</intent-filter>
+</receiver>
+<receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+<intent-filter>
+<action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+</intent-filter>
+</receiver>
+<receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+<intent-filter>
+<action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+</intent-filter>
+</receiver>
+<uses-library android:name="android.ext.adservices" android:required="false"/>
+<service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+<provider android:authorities="com.kids.preschool.learning.games.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+<receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+</intent-filter>
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+</intent-filter>
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+</intent-filter>
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+</intent-filter>
+</receiver>
+<service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+<meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+</service>
+<service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+<receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+<activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+<activity android:exported="false" android:name="com.kids.preschool.learning.dinodigging.game.DinoGameCoding" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.dinodigging.game.GameActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.dinodigging.game.LevelsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.dinodigging.DinoGallery" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.dinodigging.DinoActivity" android:screenOrientation="landscape"/>
+<activity android:exported="true" android:name="com.kids.preschool.learning.dinodigging.game_1.MainActivity" android:screenOrientation="landscape"/>
+<activity android:exported="true" android:name="com.kids.preschool.learning.dinodigging.game_1.MenuActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.dressup.PlanetDetailsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.dressup.LearnPlanetsActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.dressup.DressUpActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.numbergame.Scratch_n_CountActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.animalhalfmatch.HalfAnimalMatchin.HalfAnimalMatchingActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.kids.preschool.learning.animalhalfmatch.AnimalHalfMatchActivity" android:screenOrientation="landscape"/>
+<uses-library android:name="androidx.window.extensions" android:required="false"/>
+<uses-library android:name="androidx.window.sidecar" android:required="false"/>
+<activity android:exported="false" android:name="com.kids.preschool.learning.rescueanimal.OtpVerification"/>
+<activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.kids.preschool.learning.rescueanimal.AnimalMainActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.example.dailyroutine.ui.ReminderActivity" android:screenOrientation="landscape"/>
+<activity android:exported="false" android:hardwareAccelerated="true" android:name="com.example.dailyroutine.ui.RoutineSetActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.example.dailyroutine.ui.RoutineItemActivity" android:screenOrientation="landscape"/>
+<activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.example.dailyroutine.ui.RoutineActivity" android:screenOrientation="landscape"/>
+<receiver android:enabled="true" android:exported="true" android:foregroundServiceType="mediaPlayback" android:name="com.example.dailyroutine.broadcastreciever.ReminderBroadcastReceiver"/>
+<service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.example.dailyroutine.service.ReminderService"/>
+<service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.example.dailyroutine.service.RescheduleRemindersService"/>
+<activity android:name="com.example.dailyroutine.Editor.ImagePickerActivity" android:screenOrientation="landscape"/>
+<activity android:name="com.example.dailyroutine.Editor.ImagePickerActivity2" android:screenOrientation="landscape"/>
+<activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+<meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base,dailyroutine"/>
+<meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+<meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+<meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+<meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+<meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+</application>
+</manifest>

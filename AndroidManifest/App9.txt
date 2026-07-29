@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="net.Amanita.Design.Machinarium.GP.Demo" platformBuildVersionCode="35" platformBuildVersionName="15">
+<supports-screens android:largeScreens="true"/>
+<uses-feature android:name="android.hardware.gamepad" android:required="false"/>
+<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+<uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+<queries>
+<package android:name="com.google.android.gms"/>
+<package android:name="com.android.vending"/>
+</queries>
+<permission android:name="net.Amanita.Design.Machinarium.GP.Demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+<uses-permission android:name="net.Amanita.Design.Machinarium.GP.Demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+<application android:allowBackup="false" android:appCategory="game" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@null" android:extractNativeLibs="false" android:hasCode="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:name="com.pairip.application.Application" android:roundIcon="@mipmap/icon_round">
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+<meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id"/>
+<meta-data android:name="isGame" android:value="true"/>
+<activity android:banner="@null" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:name="net.Amanita.Design.Machinarium.GP.Demo.ActivityMain" android:resizeableActivity="true" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme">
+<intent-filter>
+<action android:name="android.intent.action.MAIN"/>
+<category android:name="android.intent.category.LAUNCHER"/>
+<category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+</intent-filter>
+<meta-data android:name="android.app.lib_name" android:value="amapp"/>
+<meta-data android:name="android.max_aspect" android:value="4.0"/>
+</activity>
+<uses-library android:name="androidx.window.extensions" android:required="false"/>
+<uses-library android:name="androidx.window.sidecar" android:required="false"/>
+<activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+<provider android:authorities="net.Amanita.Design.Machinarium.GP.Demo.playgamesinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.android.gms.games.provider.PlayGamesInitProvider"/>
+<activity android:exported="false" android:name="com.google.android.gms.games.internal.v2.resolution.GamesResolutionActivity" android:theme="@style/Theme.Games.Transparent"/>
+<activity android:exported="true" android:name="com.google.android.gms.games.internal.v2.appshortcuts.PlayGamesAppShortcutsActivity" android:theme="@style/Theme.Games.Transparent"/>
+<meta-data android:name="com.google.android.gms.games.version" android:value="@string/play_games_sdk_version"/>
+<activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<provider android:authorities="net.Amanita.Design.Machinarium.GP.Demo.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+<meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+<meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+<meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+</provider>
+<receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+</intent-filter>
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+</intent-filter>
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+</intent-filter>
+<intent-filter>
+<action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+</intent-filter>
+</receiver>
+<activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity"/>
+<provider android:authorities="net.Amanita.Design.Machinarium.GP.Demo.com.pairip.licensecheck.LicenseContentProvider" android:exported="false" android:name="com.pairip.licensecheck.LicenseContentProvider"/>
+<meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+<meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+<meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+<meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+<meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+</application>
+<uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+</manifest>
