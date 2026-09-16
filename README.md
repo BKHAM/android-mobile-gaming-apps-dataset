@@ -74,6 +74,8 @@ The manifest artifacts contain configuration information including:
 
 ---
 
+The manuscript reports an overall APK collection period of March–April 2025. Exact app-specific collection dates could not be retrospectively recovered and are therefore reported as unavailable rather than inferred.
+
 ## Reproducibility
 
 The repository provides the supporting materials required to reproduce the static analysis reported in the associated publications.
